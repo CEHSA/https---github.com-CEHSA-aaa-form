@@ -1,0 +1,103 @@
+
+.api-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.status-ok {
+    background-color: #f8f9fa;
+    border: 1px solid #28a745;
+}
+
+.status-ok .status-indicator {
+    background-color: #28a745;
+}
+
+.status-error {
+    background-color: #f8f9fa;
+    border: 1px solid #dc3545;
+}
+
+.status-error .status-indicator {
+    background-color: #dc3545;
+}
+
+.forms-list {
+    margin-top: 20px;
+}
+
+.forms-list code {
+    background: #f0f0f1;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.tablenav {
+    margin: 6px 0 4px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.alignleft.actions {
+    padding: 8px 0;
+}
+
+.alignleft.actions select {
+    margin-right: 6px;
+    max-width: 200px;
+}
+
+.form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+}
+
+.form-table td input[type="text"],
+.form-table td input[type="password"] {
+    width: 300px;
+}
+
+.nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+.tab-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.file-browser {
+    margin-top: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 782px) {
+    .form-table td input[type="text"],
+    .form-table td input[type="password"] {
+        width: 100%;
+    }
+    
+    .alignleft.actions {
+        display: block;
+        float: none;
+    }
+    
+    .alignleft.actions select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

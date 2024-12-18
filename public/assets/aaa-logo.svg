@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .aaa-orange { fill: #e67e22; }
+      .aaa-gray { fill: #2c3e50; }
+    </style>
+  </defs>
+  <g transform="translate(100, 150)">
+    <!-- House Shape -->
+    <path d="M300,50 L50,250 L550,250 Z" class="aaa-gray"/>
+    <rect x="100" y="250" width="400" height="250" class="aaa-gray"/>
+    
+    <!-- AAA Text -->
+    <text x="300" y="350" font-family="Arial" font-size="120" font-weight="bold" class="aaa-orange" text-anchor="middle">AAA</text>
+    
+    <!-- Student Rentals Text -->
+    <text x="300" y="450" font-family="Arial" font-size="48" font-weight="bold" class="aaa-orange" text-anchor="middle">STUDENT RENTALS</text>
+  </g>
+</svg>

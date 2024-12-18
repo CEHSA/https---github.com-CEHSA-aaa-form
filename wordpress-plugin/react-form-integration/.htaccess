@@ -1,0 +1,24 @@
+# Set correct MIME types for React app assets
+AddType application/javascript .js
+AddType text/css .css
+AddType application/json .json
+
+# Allow cross-origin for assets
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|json)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# Enable gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
+
+# Set caching headers
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/json "access plus 0 seconds"
+</IfModule>
